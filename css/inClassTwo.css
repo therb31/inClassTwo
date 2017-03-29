@@ -1,1 +1,46 @@
-/*All css for this project should be in this file only, not in the html file*/
+h1 {
+  font-size: 150%;
+  color: black;
+  transition: font-size 1s ease-out 1s,
+              color 1s ease-in 1s;
+}
+
+h1:hover {
+  cursor: pointer;
+  font-size: 200%;
+  color: blue;
+}
+
+.cartoon{
+  transition: 3s;
+}
+
+.cartoon:hover{
+  transform: rotate(360deg);
+}
+
+.puppy1 {
+  transition: 3s;
+}
+
+.puppy1:hover{
+  transform: rotateY(180deg);
+  transform-origin: right;
+}
+.puppy2 {
+  transition: 3s;
+}
+
+.puppy2:hover{
+  transform: rotateY(-180deg);
+  transform-origin: left;
+}
+
+h2 {
+  animation: moveright 5s 2s infinite ease-in-out alternate;
+}
+
+@keyframes moveright {
+  from {margin-left: 5%;}
+  to {margin-left: 90%;}
+}
